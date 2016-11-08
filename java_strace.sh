@@ -1,4 +1,4 @@
 #!/bin/bash
 
 javac ThreadSpawner.java
-strace -ff -r -o java_ltrace java ThreadSpawner
+strace -f -r -o java_strace.log java ThreadSpawner
