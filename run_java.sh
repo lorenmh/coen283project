@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ${0%/*}
+
 ##################
 # ThreadSpawner
 # compile
