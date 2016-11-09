@@ -8,7 +8,7 @@ public class NonConcurrent extends Thread{
 
 	public static void main(String[] args) throws InterruptedException {
 		for (int i = 0; i < 4; ++i) {
-      System.out.println("Hello from iteration " + i);
+			System.out.println("Hello from iteration " + i);
 		}
 	}
 }
