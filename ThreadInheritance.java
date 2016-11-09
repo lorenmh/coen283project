@@ -1,5 +1,5 @@
-public class NonConcurrent extends Thread{
-	public NonConcurrent(int id) {
+public class ThreadInheritance extends Thread{
+	public ThreadInheritance(int id) {
 	}
 
 	//when start() is called on each thread, will print Hello message.
