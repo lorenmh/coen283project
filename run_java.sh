@@ -8,10 +8,21 @@ cd ${0%/*}
 javac ThreadSpawner.java
 
 # strace
-strace -f -r -o log/java_strace_out.log java ThreadSpawner
+strace -f -r -o log/java_concurrent_strace_out.log java ThreadSpawner
 
 # ltrace
-ltrace -f -r -o log/java_ltrace_out.log java ThreadSpawner
+ltrace -f -r -o log/java_concurrent_ltrace_out.log java ThreadSpawner
+
+##################
+# NonConcurrent
+# compile
+javac ThreadInheritance.java
+
+# strace
+strace -f -r -o log/java_threadinheritance_strace_out.log java ThreadInheritance
+
+# ltrace
+ltrace -f -r -o log/java_threadinheritance_ltrace_out.log java ThreadInheritance
 
 ##################
 # NonConcurrent
