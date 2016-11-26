@@ -4,7 +4,7 @@ cd ${0%/*}
 rm $2 2>/dev/null
 
 #strace
-for ((n=0;n<100;n++))
+for ((n=0;n<1000;n++))
 do
 	echo "$1 iteration $n"
 	./strace_fn.sh "$1" "$2"
