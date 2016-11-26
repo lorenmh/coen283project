@@ -7,17 +7,10 @@ make
 
 ##################
 # thread_spawner
-# strace
-strace -f -r -o log/cpp_concurrent_strace_out.log ./thread_spawner.bin
 
-# ltrace
-ltrace -f -r -o log/cpp_concurrent_ltrace_out.log ./thread_spawner.bin
+./test_fn.sh ./thread_spawner.bin log/cpp_concurrent_strace_out.log
 
 ##################
 # non_concurrent
 
-# strace
-strace -f -r -o log/cpp_nonconcurrent_strace_out.log ./non_concurrent.bin
-
-# ltrace
-ltrace -f -r -o log/cpp_nonconcurrent_ltrace_out.log ./non_concurrent.bin
+./test_fn.sh ./non_concurrent.bin log/cpp_nonconcurrent_strace_out.log
